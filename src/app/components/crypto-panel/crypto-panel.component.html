@@ -1,0 +1,15 @@
+<div class="container">
+    <mat-card>
+        <mat-card-title>Bitcoin Panel</mat-card-title>
+        <mat-card-content>
+            <div class="content">
+                <div>
+                    <span>Last updated: {{(bitcoinPrice$ | async)?.time?.updated}}</span>
+                </div>
+                <div>
+                    <span>BTC-USD: {{(bitcoinPrice$ | async)?.bpi?.USD?.rate_float}}</span>
+                </div>
+            </div>
+        </mat-card-content>
+    </mat-card>
+</div>
