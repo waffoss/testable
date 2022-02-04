@@ -12,6 +12,7 @@ import { CryptoPanelComponent } from './components/crypto-panel/crypto-panel.com
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from './material.module';
 import { catReducer } from './store/cats/cats.reducers';
+import { ServicesModule } from './services/services.module';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { catReducer } from './store/cats/cats.reducers';
     StoreModule.forRoot({cryptoData: cryptoReducer, catData: catReducer}),
     StoreDevtoolsModule.instrument({maxAge: 10}),
     BrowserAnimationsModule,
-    MaterialModule
+    MaterialModule,
+    ServicesModule
   ],
   providers: [],
   bootstrap: [AppComponent]
