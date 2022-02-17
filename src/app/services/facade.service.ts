@@ -2,7 +2,9 @@ import { Injectable, Injector } from '@angular/core';
 import { CatService } from './cat/cat.service';
 import { CryptoService } from './crypto/crypto.service';
 
-@Injectable()
+@Injectable({
+  providedIn: 'root'
+})
 export class FacadeService {
 
   private _catService!: CatService;

@@ -24,10 +24,10 @@ import { ServicesModule } from './services/services.module';
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
+    MaterialModule,
     StoreModule.forRoot({cryptoData: cryptoReducer, catData: catReducer}),
     StoreDevtoolsModule.instrument({maxAge: 10}),
     BrowserAnimationsModule,
-    MaterialModule,
     ServicesModule
   ],
   providers: [],
